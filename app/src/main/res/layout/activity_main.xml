@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_violet_white"
+    tools:context=".PrimoAccesso.MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/architects_daughter"
+            android:text="SELECT YOUR WAY"
+            android:textAlignment="center"
+            android:textColor="@color/backFragColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/header"
+        android:weightSum="100"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            >
+
+            <CheckBox
+                android:id="@+id/usualaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:button="@drawable/checkusualaccess"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/usualaccessbutton"
+                />
+
+
+            <CheckBox
+                android:id="@+id/casualaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usualaccess"
+                android:layout_centerHorizontal="true"
+                android:button="@drawable/checkcasualaccess"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/casualaccessbutton"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            >
+
+            <CheckBox
+                android:id="@+id/formalaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:button="@drawable/checkformalaccess"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/formalaccessbutton"
+                />
+
+
+            <CheckBox
+                android:id="@+id/elegantaccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/formalaccess"
+                android:button="@drawable/checkelegantaccess"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/elegantaccessbutton"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+        android:background="@drawable/appendino"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/appendino" />
+
+</RelativeLayout>

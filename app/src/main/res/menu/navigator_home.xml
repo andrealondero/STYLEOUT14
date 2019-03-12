@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Outfit"
+        android:icon="@drawable/appendino"/>
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title="Armadio"
+        android:icon="@drawable/appendino"
+        />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:title="Settings"
+        android:icon="@drawable/appendino"/>
+
+    <item
+        android:id="@+id/navigation_registrati"
+        android:title="Login"
+        android:icon="@drawable/appendino" />
+</menu>

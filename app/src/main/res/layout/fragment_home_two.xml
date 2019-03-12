@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.FragmentHomeTwo"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimaryDark"
+        >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/model_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:padding="10dp"
+                            android:id="@+id/riga_sopra"
+                            >
+
+                                <ImageView
+                                    android:id="@+id/upperView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/tshirt"
+                                    />
+
+                        </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="50"
+                                    android:padding="10dp"
+                                    android:id="@+id/riga_sotto"
+                                    >
+
+                                        <ImageView
+                                            android:id="@+id/downView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/tshirt"
+                                            />
+
+                                </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

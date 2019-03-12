@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#793F52</color>
+    <color name="colorPrimaryDark">#532f76</color>
+    <color name="colorAccent">#363d5d</color>
+    <color name="backFragColor">#3F0775</color>
+    <color name="backporporalight">#9B3757</color>
+    <color name="backporpora">#ae743e</color>
+    <color name="backgrey2">#969696</color>
+    <color name="backgrey">#c6c6c6</color>
+    <color name="backwhite">#ffffff</color>
+</resources>

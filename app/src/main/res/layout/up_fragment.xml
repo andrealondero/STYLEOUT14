@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:id="@+id/general_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_above="@id/header_recycler"
+                >
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/header_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/up_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        >
+                    </android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/color_spinner_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            >
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/listDivider"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:fontFamily="@font/architects_daughter"
+                android:textStyle="bold"
+                android:text="COLOR"
+                />
+
+            <Spinner
+                android:id="@+id/upspinner"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                >
+            </Spinner>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabric_spinner_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingStart="15dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/architects_daughter"
+                    android:textStyle="bold"
+                    android:text="FABRIC"
+                    />
+
+                <Spinner
+                    android:id="@+id/fabricupselect"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    >
+                </Spinner>
+
+            </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tag_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="10"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/usual_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/checkboxusual"
+                            android:src="@drawable/usualbutton"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/casual_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/usual_button"
+                            android:layout_marginLeft="15dp"
+                            android:button="@drawable/checkboxcasual"
+                            android:src="@drawable/casualbutton"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/formal_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/elegant_button"
+                            android:button="@drawable/checkboxformal"
+                            android:src="@drawable/formalbutton"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/elegant_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/checkboxelegant"
+                            android:src="@drawable/elegantbutton"
+                            />
+
+                    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/change_image_body"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imagechange_up"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/upButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ADD" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

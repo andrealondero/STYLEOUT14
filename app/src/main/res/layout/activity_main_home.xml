@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MainHomeActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/model_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top_view"
+                        android:padding="5dp"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/btnConferma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/confirmbutton"
+                            android:background="@drawable/confirmbutton"
+                            android:clickable="true"
+                            android:onClick="Accapt"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/btnRifiuta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/btnConferma"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/refusebutton"
+                            android:src="@drawable/refusebutton"
+                            android:clickable="true"
+                            android:onClick="Refuse"/>
+
+                        <ImageButton
+                            android:id="@+id/btnModifica"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/btnOutList"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/modifybutton"
+                            android:src="@drawable/modifybutton"
+                            android:clickable="true"
+                            android:onClick="Modify"/>
+
+                        <ImageButton
+                            android:id="@+id/btnOutList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/outlistbutton"
+                            android:src="@drawable/outlistbutton"
+                            android:clickable="true"
+                            android:onClick="Outlist"/>
+
+                    </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:padding="10dp"
+                            android:id="@+id/riga_sopra"
+                            >
+
+                                <ImageView
+                                    android:id="@+id/upperView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/tshirt"
+                                    />
+
+                        </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="50"
+                                    android:padding="10dp"
+                                    android:id="@+id/riga_sotto"
+                                    >
+
+                                        <ImageView
+                                            android:id="@+id/downView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/tshirt"
+                                            />
+
+                                </RelativeLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/home_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:labelVisibilityMode="labeled"
+            app:itemBackground="@color/colorPrimaryDark"
+            app:itemIconTint="@color/backgrey"
+            app:itemTextColor="#FFFFFF"
+            app:itemIconSize="30dp"
+            app:menu="@menu/navigator_home"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
