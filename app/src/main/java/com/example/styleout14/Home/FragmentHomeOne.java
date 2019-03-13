@@ -52,9 +52,9 @@ public class FragmentHomeOne extends Fragment {
 
         int asd = view.getContext().getResources().getIdentifier("tshirt_red", "drawable", getActivity().getPackageName());
 
-        //db.addVestito("red", "#C40233", 1, "maglia rossa", "avorio", 3, R.drawable.ic_tshirt);
-        //db.addVestito("yellow", "#FFD400", 1, "pantalone", "cacca", 201, R.drawable.pantaloni_sigaretta_tasconi);
-        //db.addVestito("yellow", "#FFD400", 1, "intimo", "cacca", 111, R.drawable.pantaloni_sigaretta_tasconi);
+        db.addVestito("red", "#C40233", 1, "maglia rossa", "avorio", 3, R.drawable.ic_tshirt);
+        db.addVestito("yellow", "#FFD400", 1, "pantalone", "cacca", 201, R.drawable.pantaloni_sigaretta_tasconi);
+        db.addVestito("yellow", "#FFD400", 1, "intimo", "cacca", 111, R.drawable.pantaloni_sigaretta_tasconi);
         //db.addVestito("arancione", 1, "maglia arancia", "avorio", 1, R.drawable.hoodie_orange);
         //db.addVestito("blu", 1, "pantalone jeans", "cacca", 2, R.drawable.trauser_denim);
         //db.addVestito("blu",1,"maglia verde", "cacca",1, R.drawable.tshirt_denim);

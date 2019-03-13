@@ -31,6 +31,8 @@ public class MainHomeActivity extends AppCompatActivity {
         Fragment fragment = new FragmentHomeOne();
         getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
 
+
+
         final BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.styleout14.DB.Popolamento;
 import com.example.styleout14.FromDoneToHome;
 import com.example.styleout14.Home.MainHomeActivity;
 import com.example.styleout14.R;
@@ -22,6 +23,7 @@ public class Main2ndAccessActivity extends AppCompatActivity  implements FromDon
         ViewPager viewPager;
         FragmentAdapter2ndAccess adapterFragment;
 
+        new Popolamento(this);
 
             tabLayout = (TabLayout) findViewById( R.id.tabs );
             viewPager = (ViewPager) findViewById( R.id.container );

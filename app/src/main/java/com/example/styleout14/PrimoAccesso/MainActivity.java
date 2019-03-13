@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
+import com.example.styleout14.DB.Popolamento;
 import com.example.styleout14.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
+
         final Button button = findViewById( R.id.done );
         final CheckBox checkelegant = findViewById( R.id.elegantaccess );
         final CheckBox checkformal = findViewById( R.id.formalaccess );
