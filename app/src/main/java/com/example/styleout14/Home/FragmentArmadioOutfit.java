@@ -14,15 +14,15 @@ import com.example.styleout14.PrimoAccesso.Top.Top;
 import com.example.styleout14.PrimoAccesso.Up.Up;
 import com.example.styleout14.R;
 
-public class Armadio extends Fragment {
+public class FragmentArmadioOutfit extends Fragment {
 
-    public Armadio() {
+    public FragmentArmadioOutfit() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate( R.layout.activity_armadio, container, false);
+        final View view = inflater.inflate( R.layout.fragment_armadio_outfit, container, false);
 
         final Up up = new Up();
         final Down down = new Down();

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_violet_white"
+    tools:context=".PrimoAccesso.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_weight="40"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/backgrey2"
+        app:itemTextColor="@color/backgrey2"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigator_home" />
+
+</LinearLayout>

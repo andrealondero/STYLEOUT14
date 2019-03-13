@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ModificaOutfit extends Fragment {
+public class FragmentModificaOutfit extends Fragment {
 
-    public ModificaOutfit() {
+    public FragmentModificaOutfit() {
     }
 
     @Nullable

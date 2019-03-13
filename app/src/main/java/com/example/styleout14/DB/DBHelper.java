@@ -74,6 +74,7 @@ public class DBHelper extends SQLiteOpenHelper {
             " `tipiVestito_ID` INTEGER NOT NULL, " +
             " PRIMARY KEY(`tipiOutfit_ID`,`tipiVestito_ID`) )";
 
+
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }

@@ -39,16 +39,16 @@ public class MainHomeActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.navigation_home:
-                        selectedFragment = new FragmentHomeOne();
+                        selectedFragment = new FragmentOne();
                         break;
                     case R.id.navigation_dashboard:
-                        selectedFragment = new FragmentHomeTwo();
+                        selectedFragment = new FragmentTwo();
                         break;
                     case R.id.navigation_registrati:
                         selectedFragment = new FragmentLogin();
                         break;
                     case R.id.navigation_settings:
-                        selectedFragment = new FragmentRegister();
+                        selectedFragment = new FragmentSettings();
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, selectedFragment).commit();
                 return true;
