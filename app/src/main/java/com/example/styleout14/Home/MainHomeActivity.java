@@ -39,10 +39,10 @@ public class MainHomeActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.navigation_home:
-                        selectedFragment = new FragmentOne();
+                        selectedFragment = new FragmentHomeOne();
                         break;
                     case R.id.navigation_dashboard:
-                        selectedFragment = new FragmentTwo();
+                        selectedFragment = new FragmentHomeTwo();
                         break;
                     case R.id.navigation_registrati:
                         selectedFragment = new FragmentLogin();

@@ -35,7 +35,7 @@ public class DBAdapterLogin {
         database.close();
     }
 
-    void addDati(String email, String password){
+    public void addDati(String email, String password){
         open();
 
         ContentValues values = new ContentValues();
@@ -508,7 +508,7 @@ public class DBAdapterLogin {
         return lista_vestiti;
     }
 
-    Boolean isEmailPresent(String email){
+    public Boolean isEmailPresent(String email){
         open();
 
         Cursor cursor = database.query(DBHelper.TABLE_CONTACTS, new String[]{DBHelper.KEY_EMAIL, DBHelper.KEY_PASSWORD}, DBHelper.KEY_EMAIL + "=?",
@@ -524,7 +524,7 @@ public class DBAdapterLogin {
         else return false;
     }
 
-    String getPassword(String email){
+    public String getPassword(String email){
         open();
 
         Cursor cursor = database.query(DBHelper.TABLE_CONTACTS, new String[]{DBHelper.KEY_PASSWORD}, DBHelper.KEY_EMAIL + "=?",
